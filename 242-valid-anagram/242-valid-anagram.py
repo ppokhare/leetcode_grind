@@ -22,4 +22,8 @@ class Solution(object):
         for _,v in anaDict.items():
             if v != 0: return False
         return True
+    
+    
+        #idea 4: use sort and compaare the string. Runtime: O(nlogn) Space: O(1)
+        # return sorted(s) == sorted(t)
             
