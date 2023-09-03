@@ -1,9 +1,9 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
-        
-        
-        # len(strs)*number of char time, space: 26*len(strs) 
+        #O(len(strs)*num of char log num of char), space: len*strs: sort and hash
+            
+        # len(strs)*number of char time, space:len(strs) 
         dictAna = defaultdict(list)
         for elt in strs:
             arr = [0]*26
