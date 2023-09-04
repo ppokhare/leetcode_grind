@@ -5,8 +5,7 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        
-  
+        ##create a dummy node for result; edge case of lists with different lenghts
         dummy = ListNode(0)
         result = dummy
         while list1 and list2:
