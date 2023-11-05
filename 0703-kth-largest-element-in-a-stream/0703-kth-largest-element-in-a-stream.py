@@ -8,8 +8,10 @@ class KthLargest:
         self.nums = nums
         heapq.heapify(self.nums) #O(n)
         
-        while len(self.nums) > self.k:
-            heapq.heappop(self.nums)
+        
+#     def fixLenght(self):
+#         while len(self.nums) > self.k:
+#             heapq.heappop(self.nums)
             
 
     def add(self, val: int) -> int:
